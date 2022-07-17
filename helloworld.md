@@ -139,15 +139,15 @@
     >>> Your leg is too short
     ```
 - 문자열 나누기
-```
-a = "Life is too short"
-a.split()
->>> ['Life', 'is', 'too', 'short']
+    ```
+    a = "Life is too short"
+    a.split()
+    >>> ['Life', 'is', 'too', 'short']
 
-a = "a:b:c:d"
-a.split(':')
->>> ['a', 'b', 'c', 'd']
-```
+    a = "a:b:c:d"
+    a.split(':')
+    >>> ['a', 'b', 'c', 'd']
+    ```
 </details>
 
 
