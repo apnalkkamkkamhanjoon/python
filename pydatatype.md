@@ -2,7 +2,7 @@
 
 ### 파이썬의 자료형
 > 숫자, 문자열, 불
-변수, 리스트, 튜플
+변수, 리스트, 튜플,
 딕셔너리, 집합
 
 <details>
@@ -150,4 +150,11 @@
     ```
 </details>
 
+<details>
+<summary>불 변수 자료형</summary>
+</details>
+
+<details>
+<summary>리스트 자료형</summary>
+</details>
 
