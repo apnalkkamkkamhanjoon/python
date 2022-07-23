@@ -241,6 +241,22 @@
 ```
 b = (1, 2, 'a')
 ```
+- 튜플 요소값 삭제시 오류
+```
+t1 = (1, 2, 'a', 'b')
+del t1[0]
+>>> Traceback (innermost last):
+>>> File "", line 1, in ?del t1[0]
+>>> TypeError: object doesn't support item deletion
+```
+- 튜플 요소값 변경시 오류
+```
+t1 = (1, 2, 'a', 'b')
+t1[0] = 'c'
+>>> Traceback (innermost last):
+>>> File "", line 1, in ?t1[0] = 'c'
+>>> TypeError: object doesn't support item assignmen
+```
 - 인덱싱
 ```
 t1 = (1, 2, 'a', 'b')
