@@ -274,46 +274,85 @@
 b = (1, 2, 'a')
 ```
 - 튜플 요소값 삭제시 오류
-```
-t1 = (1, 2, 'a', 'b')
-del t1[0]
->>> Traceback (innermost last):
->>> File "", line 1, in ?del t1[0]
->>> TypeError: object doesn't support item deletion
-```
+    ```
+    t1 = (1, 2, 'a', 'b')
+    del t1[0]
+    >>> Traceback (innermost last):
+    >>> File "", line 1, in ?del t1[0]
+    >>> TypeError: object doesn't support item deletion
+    ```
 - 튜플 요소값 변경시 오류
-```
-t1 = (1, 2, 'a', 'b')
-t1[0] = 'c'
->>> Traceback (innermost last):
->>> File "", line 1, in ?t1[0] = 'c'
->>> TypeError: object doesn't support item assignmen
-```
+    ```
+    t1 = (1, 2, 'a', 'b')
+    t1[0] = 'c'
+    >>> Traceback (innermost last):
+    >>> File "", line 1, in ?t1[0] = 'c'
+    >>> TypeError: object doesn't support item assignmen
+    ```
 - 인덱싱
-```
-t1 = (1, 2, 'a', 'b')
-t1[0]
->>> 1
-t1[3]
->>> b
-```
+    ```
+    t1 = (1, 2, 'a', 'b')
+    t1[0]
+    >>> 1
+    t1[3]
+    >>> b
+    ```
 - 슬라이싱
-```
-t1 = (1, 2, 'a', 'b')
-t1[1:]
->>>(2, 'a', 'b')
-```
+    ```
+    t1 = (1, 2, 'a', 'b')
+    t1[1:]
+    >>>(2, 'a', 'b')
+    ```
 - 더하기
-```
-t1 = (1, 2, 'a', 'b')
-t2 = (3, 4)
-t1 + t2
->>> (1, 2, 'a', 'b', 3, 4)
-```
+    ```
+    t1 = (1, 2, 'a', 'b')
+    t2 = (3, 4)
+    t1 + t2
+    >>> (1, 2, 'a', 'b', 3, 4)
+    ```
 - 곱하기
-```
-t2 = (3, 4)
-t2 * 3
->>> (3, 4, 3, 4, 3, 4)
-```
+    ```
+    t2 = (3, 4)
+    t2 * 3
+    >>> (3, 4, 3, 4, 3, 4)
+    ```
 </details>
+
+<details>
+<summary>딕셔너리 자료형</summary>
+- 연관 배열(Associative array) 또는 해시(Hash)
+
+```
+dic = {'name':'pey', 'phone':'0119993323', 'birth': '1118'}
+```
+
+- 딕셔너리 쌍 추가하기
+    ```
+    a = {1: 'a'}
+    a['name'] = "익명"
+    >>> {1: 'a', 'name': '익명'}
+    ```
+
+- 딕셔너리 요소 삭제하기
+    ```
+    a = {1: 'a'}
+    a['name'] = "익명"
+    del a[1]
+    >>> {'name': '익명'}
+    ```
+
+- 딕셔너리에서 Key 사용해 Value 얻기
+    ```
+    grade = {'pey': 10, 'julliet': 99}
+    grade['pey']
+    >>> 10
+    grade['julliet']
+    >>> 99
+    ```
+
+- 딕셔너리 만들 때 주의 사항
+    ```
+    a = {1:'a', 1:'b'}S
+    >>> {1: 'b'}
+    ```
+<details>

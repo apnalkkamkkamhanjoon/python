@@ -1,4 +1,4 @@
-print("helloworld")
-a = [1, 2, 3]
-a.pop()
+a = {1: 'a'}
+a['name'] = "익명"
+del a[1]
 print(a)
