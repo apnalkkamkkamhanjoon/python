@@ -355,4 +355,16 @@ dic = {'name':'pey', 'phone':'0119993323', 'birth': '1118'}
     a = {1:'a', 1:'b'}S
     >>> {1: 'b'}
     ```
+- Key 리스트 만들기(keys)
+    ```
+    a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
+    a.keys()
+    >> dict_keys(['name', 'phone', 'birth'])
+    ```
+- Value 리스트 만들기(values)
+    ```
+    a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
+    a.values()
+    >>> dict_values(['pey', '0119993323', '1118'])
+    ```
 <details>
